@@ -1,0 +1,45 @@
+
+public class Recipe{
+    int cookTime;
+    List<String> ingredients;
+    String name;
+    int calories;
+
+    Recipe(){
+        cookTime = 1;
+        ingredients = null;
+        name = "";
+        calories = 0;
+    }
+
+    public void setCookTime(int c){
+        cookTime = c;
+    }
+
+    public void addIngredients(String ingred){
+        ingredients.add(ingred);
+    }
+
+    public void setName(String n){
+        name = n;
+    }
+
+    public void setCalories(int cal){
+        calories = cal;
+    }
+
+    public int getCalories() {
+        return calories;
+    }
+
+    public int getCookTime() {
+        return cookTime;
+    }
+
+    public String getIngredient(int index){
+        if(index > ingredients.size()-1){
+            return "";
+        }
+        return ingredients.get(index);
+    }
+}
