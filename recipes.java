@@ -35,7 +35,7 @@ public class Recipe {
 
 
 
-          public Course() {
+          public Recipe() {
           }
 
           public  int getID() {
